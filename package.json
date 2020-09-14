@@ -6,10 +6,7 @@
   },
   "workspaces": {
     "packages": ["packages/*"],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**"
-    ]
+    "nohoist": ["**/react-native", "**/react-native/**"]
   },
   "scripts": {
     "android": "lerna --scope=app run android --stream --",

@@ -95,3 +95,12 @@ check if everything is ok
 if error occurs run 
 `lerna bootstrap --force-local && lerna link --force-local`
 
+in case of website it will give error at eslint, for it
+
+add 
+`SKIP_PREFLIGHT_CHECK=true` in `.env` file at **packages/web**
+
+then install eslint in web folder as (check version in yarn.lock what is needed)
+
+`yarn add eslint@6.6.0`
+
