@@ -58,10 +58,10 @@ rename `name : 'web'` in package.json to `"name": "@monorepo/web",`
 theme - styling
 type - graphql types
 
-Use below commands in root 
+Use below commands inside packages 
 
-`mkdir local-packages`
-`cd local-packages`
+`mkdir shared`
+`cd shared`
 `mkdir core && mkdir theme && mkdir types`
 
 9. Check if mobile and web is running properly
@@ -104,3 +104,10 @@ then install eslint in web folder as (check version in yarn.lock what is needed)
 
 `yarn add eslint@6.6.0`
 
+13. Add below lines in root package.json to run code from root
+
+"scripts": {
+    "android": "lerna --scope=@monorepo/app run android --stream --",
+    "ios": "lerna --scope=@monorepo/app run ios --stream --",
+    "web": "lerna --scope=@monorepo/web run start"
+}

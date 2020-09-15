@@ -25,3 +25,10 @@ or
 to run on specific ios simulator
 `npx react-native run-ios --simulator="iPhone 5s"`
  
+ To install a library in specific folder
+
+ lerna add dayjs --scope=@monorepo/shared
+
+ To import code from shared
+
+ import { getCurrentTime } from '@monorepo/shared/time';

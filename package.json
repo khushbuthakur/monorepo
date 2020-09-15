@@ -9,8 +9,8 @@
     "nohoist": ["**/react-native", "**/react-native/**"]
   },
   "scripts": {
-    "android": "lerna --scope=app run android --stream --",
-    "ios": "lerna --scope=app run ios --stream --",
-    "web": "lerna --scope=web run start --stream --"
+    "android": "lerna --scope=@monorepo/app run android --stream --",
+    "ios": "lerna --scope=@monorepo/app run ios --stream --",
+    "web": "lerna --scope=@monorepo/web run start"
   }
 }
