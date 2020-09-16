@@ -111,3 +111,15 @@ then install eslint in web folder as (check version in yarn.lock what is needed)
     "ios": "lerna --scope=@monorepo/app run ios --stream --",
     "web": "lerna --scope=@monorepo/web run start"
 }
+
+14. In order to run outside packages in react native do following
+
+For example to run dayjs file from shared/core/time.js
+
+add in `metro.config.js`
+
+ watchFolders: [
+    // Watch root package node_modules to follow symlinks of yarn hoisted packages
+    path.resolve(__dirname, '../../node_modules'),
+    path.resolve(__dirname, '../shared'),
+  ],

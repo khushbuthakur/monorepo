@@ -9,9 +9,9 @@ const FONTS = {
     SMALL : 12
 };
 
-const CONSTS = {
+const THEME = {
     COLORS,
     FONTS
 };
 
-export default CONSTS;
+export default THEME;

@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import CORE_CONSTANTS from '@monorepo-local/core/constants';
-import { getCurrentTime } from '@monorepo/shared/time';
+import { getCurrentTime } from '@monorepo/shared/core/src/time';
 import CONSTS from '@monorepo/shared/core/src/constants';
+import THEME from '@monorepo/shared/theme/src/constants';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <p>{getCurrentTime()}</p>
 
         <p>{CONSTS.BASE_URL}</p>
+
+        <p>{THEME.COLORS.PRIMARY_COLOR}</p>
       </header>
     </div>
   );

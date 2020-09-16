@@ -1,5 +1,6 @@
 import CONSTS from '@monorepo/shared/core/src/constants';
-import { getCurrentTime } from '@monorepo/shared/time';
+import THEME from '@monorepo/shared/theme/src/constants';
+import { getCurrentTime } from '@monorepo/shared/core/src/time';
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -36,7 +37,8 @@ const App = () => {
           style={styles.scrollView}>
           <Header />
             <Text>{getCurrentTime()}</Text>
-            <p>{CONSTS.BASE_URL}</p>
+            <Text>{CONSTS.BASE_URL}</Text>
+            <Text>{THEME.COLORS.SECONDARY_COLOR}</Text>
         </ScrollView>
       </SafeAreaView>
     </>
