@@ -9,7 +9,7 @@ import { getCurrentTime } from '@monorepo/shared/core/src/time';
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -27,9 +27,24 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import API from '@monorepo/shared/core/src/posts';
+import Posts from './components/Posts';
+
 const App = () => {
+  
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetchPost();
+  }, []);
+
+  fetchPost = async() =>{
+    let data = await API.fetchPost();
+    setPosts(data);
+  }
+
   return (
-    <>
+    <React.Fragment>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -40,8 +55,11 @@ const App = () => {
             <Text>{CONSTS.BASE_URL}</Text>
             <Text>{THEME.COLORS.SECONDARY_COLOR}</Text>
         </ScrollView>
+        <ScrollView>
+          {posts.length > 0 && <Posts posts={posts}/>}
+        </ScrollView>
       </SafeAreaView>
-    </>
+    </React.Fragment>
   );
 };
 

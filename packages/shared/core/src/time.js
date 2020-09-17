@@ -1,7 +1,18 @@
 const dayjs = require("dayjs");
+let timerId;
 
-function getCurrentTime(){
-return dayjs().format('D MMM, YYYY : HH:mm:ss');
+function getCurrentTime() {
+    return dayjs().format('D MMM, YYYY : HH:mm:ss');
 }
 
-export {getCurrentTime};
+function stopTimer() {
+    clearInterval(timerId);
+}
+
+let timer = setInterval(() => (dayjs().format('D MMM, YYYY : HH:mm:ss', 1000)));
+
+        export {
+            getCurrentTime,
+            stopTimer,
+            timer
+        };

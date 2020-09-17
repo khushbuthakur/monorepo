@@ -1,12 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import CORE_CONSTANTS from '@monorepo-local/core/constants';
 import { getCurrentTime } from '@monorepo/shared/core/src/time';
 import CONSTS from '@monorepo/shared/core/src/constants';
 import THEME from '@monorepo/shared/theme/src/constants';
+import API from '@monorepo/shared/core/src/posts';
+import Posts from './components/Posts';
 
-function App() {
+const App = () => {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetchPost();
+  }, []);
+
+  const fetchPost = async() =>{
+    let data = await API.fetchPost();
+    setPosts(data);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -30,6 +44,9 @@ function App() {
 
         <p>{THEME.COLORS.PRIMARY_COLOR}</p>
       </header>
+
+      {posts.length > 0 && <Posts posts={posts}/>}
+
     </div>
   );
 }
