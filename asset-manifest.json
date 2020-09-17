@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/khushbuthakur/monorepo/home/static/css/main.5f361e03.chunk.css",
-    "main.js": "/khushbuthakur/monorepo/home/static/js/main.44b92e1d.chunk.js",
-    "main.js.map": "/khushbuthakur/monorepo/home/static/js/main.44b92e1d.chunk.js.map",
-    "runtime-main.js": "/khushbuthakur/monorepo/home/static/js/runtime-main.20927f82.js",
-    "runtime-main.js.map": "/khushbuthakur/monorepo/home/static/js/runtime-main.20927f82.js.map",
-    "static/js/2.72e4222a.chunk.js": "/khushbuthakur/monorepo/home/static/js/2.72e4222a.chunk.js",
-    "static/js/2.72e4222a.chunk.js.map": "/khushbuthakur/monorepo/home/static/js/2.72e4222a.chunk.js.map",
-    "index.html": "/khushbuthakur/monorepo/home/index.html",
-    "precache-manifest.22df55e3da28e0527554208e214a88a0.js": "/khushbuthakur/monorepo/home/precache-manifest.22df55e3da28e0527554208e214a88a0.js",
-    "service-worker.js": "/khushbuthakur/monorepo/home/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/khushbuthakur/monorepo/home/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.72e4222a.chunk.js.LICENSE.txt": "/khushbuthakur/monorepo/home/static/js/2.72e4222a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/khushbuthakur/monorepo/home/static/media/logo.5d5d9eef.svg"
+    "main.css": "/khushbuthakur/monorepo/static/css/main.5f361e03.chunk.css",
+    "main.js": "/khushbuthakur/monorepo/static/js/main.6cd7959b.chunk.js",
+    "main.js.map": "/khushbuthakur/monorepo/static/js/main.6cd7959b.chunk.js.map",
+    "runtime-main.js": "/khushbuthakur/monorepo/static/js/runtime-main.741be2ad.js",
+    "runtime-main.js.map": "/khushbuthakur/monorepo/static/js/runtime-main.741be2ad.js.map",
+    "static/js/2.72e4222a.chunk.js": "/khushbuthakur/monorepo/static/js/2.72e4222a.chunk.js",
+    "static/js/2.72e4222a.chunk.js.map": "/khushbuthakur/monorepo/static/js/2.72e4222a.chunk.js.map",
+    "index.html": "/khushbuthakur/monorepo/index.html",
+    "precache-manifest.b4f38068965e56228c4c68ba038f6259.js": "/khushbuthakur/monorepo/precache-manifest.b4f38068965e56228c4c68ba038f6259.js",
+    "service-worker.js": "/khushbuthakur/monorepo/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/khushbuthakur/monorepo/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.72e4222a.chunk.js.LICENSE.txt": "/khushbuthakur/monorepo/static/js/2.72e4222a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/khushbuthakur/monorepo/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.20927f82.js",
+    "static/js/runtime-main.741be2ad.js",
     "static/js/2.72e4222a.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.44b92e1d.chunk.js"
+    "static/js/main.6cd7959b.chunk.js"
   ]
 }
